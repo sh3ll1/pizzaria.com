@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login.</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <div class="page">
+        <form method="POST" class="formLogin">
+        <h3>Cadastro</h3>
+        <p>Digite os seus dados de acesso no campo abaixo.</p>
+        <input type="text" placeholder="Login" id="login" >
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="text" placeholder="email" id="email" >
+        <input type="text" placeholder="teleone" id="teleone" >
+        <input type="submit" onclick="logar(); return false">
+ </form>
+ <script>
+    function logar(){
+     var login = document.getElementById('login').value;
+     var senha = document.getElementById('senha').value;var senha = document.getElementById('senha').value;
+     var teleone = document.getElementById('teleone').value;
+     var email = document.getElementById('email').value;
+     
+    if (login == "ADMIN" || senha == "123"){
+     alert("sucesso.");
+     location.href = "home.html";
+    }else{
+        alert("USUARIO OU SENHA INCORRETOS")
+ }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
